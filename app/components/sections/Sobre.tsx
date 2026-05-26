@@ -27,11 +27,11 @@ export function Sobre() {
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <FadeIn>
           <div className="relative">
-            <div className="aspect-[4/3] md:aspect-[3/4] overflow-hidden rounded-sm bg-gradient-to-br from-champagne/20 to-accent-deep/10">
+            <div className="overflow-hidden rounded-sm bg-gradient-to-br from-champagne/20 to-accent-deep/10 shadow-sm">
               <img
                 src="/asduas.jpg"
                 alt="Escritório Castro & Damaso"
-                className="h-full w-full object-cover object-center"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="absolute -bottom-3 -right-3 h-full w-full rounded-sm border border-champagne/15 -z-10" />
