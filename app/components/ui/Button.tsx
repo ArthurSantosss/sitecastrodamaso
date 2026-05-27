@@ -12,13 +12,13 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-sm px-8 py-3.5 font-sans text-sm font-medium tracking-wider uppercase transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-2 focus-visible:ring-offset-dark";
+    "inline-flex items-center justify-center gap-2 rounded-full px-9 py-4 font-sans text-sm font-semibold tracking-wider uppercase transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-2 focus-visible:ring-offset-dark";
 
   const variants = {
     filled:
-      "bg-champagne text-dark shadow-[0_2px_16px_rgba(209,169,120,0.25)] hover:bg-champagne-light hover:shadow-[0_4px_24px_rgba(209,169,120,0.35)] active:bg-champagne-dark active:shadow-none hover:-translate-y-0.5 active:translate-y-0",
+      "bg-gradient-to-r from-champagne-light via-champagne to-champagne-dark text-dark shadow-[0_4px_24px_rgba(201,151,62,0.35)] hover:shadow-[0_8px_40px_rgba(201,151,62,0.5)] hover:-translate-y-1 active:translate-y-0 active:shadow-[0_2px_12px_rgba(201,151,62,0.2)]",
     outline:
-      "border border-champagne/40 text-champagne hover:border-champagne hover:bg-champagne/5 active:bg-champagne/10 hover:-translate-y-0.5 active:translate-y-0",
+      "border border-champagne/40 text-champagne hover:border-champagne hover:bg-champagne/8 hover:-translate-y-1 active:translate-y-0 active:bg-champagne/12",
   };
 
   return (

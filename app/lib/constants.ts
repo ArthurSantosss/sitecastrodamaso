@@ -19,7 +19,7 @@ export const PARTNERS = [
   {
     name: "Amanda Castro",
     photo: "/amanda.jpg",
-    oab: "OAB/MG XXX.XXX", // TODO: Arthur preencher com número real
+    oab: "OAB/MG", // TODO: preencher com número real
     whatsapp: "5531971378863",
     whatsappFormatted: "(31) 97137-8863",
     instagram: "https://instagram.com/amandadecastroadv",
@@ -29,7 +29,7 @@ export const PARTNERS = [
   {
     name: "Manuella Damaso",
     photo: "/manuella.jpg",
-    oab: "OAB/MG XXX.XXX", // TODO: Arthur preencher com número real
+    oab: "OAB/MG", // TODO: preencher com número real
     whatsapp: "5531998020864",
     whatsappFormatted: "(31) 99802-0864",
     instagram: "https://instagram.com/manuella.advogada",

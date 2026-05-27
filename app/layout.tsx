@@ -19,22 +19,32 @@ export const metadata: Metadata = {
   title:
     "Castro & Damaso Advocacia | Advocacia e Consultoria Jurídica em Ponte Nova/MG",
   description:
-    "Escritório de advocacia em Ponte Nova/MG com atuação multidisciplinar. Atendimento personalizado, técnica e ética em cada caso.",
+    "Escritório de advocacia em Ponte Nova/MG especializado em direito civil, previdenciário e bancário. Atendimento personalizado com técnica, ética e proximidade real.",
   keywords: [
     "advogado Ponte Nova",
     "advocacia Ponte Nova MG",
-    "consultoria jurídica",
-    "direito civil",
-    "direito de família",
-    "direito trabalhista",
-    "Castro Damaso",
+    "consultoria jurídica Ponte Nova",
+    "direito civil Ponte Nova",
+    "direito previdenciário",
+    "direito bancário",
+    "escritório de advocacia Zona da Mata",
+    "Castro Damaso advogadas",
   ],
   authors: [{ name: "Castro & Damaso Advocacia e Consultoria Jurídica" }],
+  alternates: {
+    canonical: "https://castroedamaso.adv.br",
+  },
+  other: {
+    "geo.region": "BR-MG",
+    "geo.placename": "Ponte Nova",
+    "geo.position": "-20.4153;-42.9069",
+    "ICBM": "-20.4153, -42.9069",
+  },
   openGraph: {
     title:
       "Castro & Damaso Advocacia | Advocacia e Consultoria Jurídica em Ponte Nova/MG",
     description:
-      "Escritório de advocacia em Ponte Nova/MG com atuação multidisciplinar. Atendimento personalizado, técnica e ética em cada caso.",
+      "Escritório de advocacia em Ponte Nova/MG especializado em direito civil, previdenciário e bancário. Atendimento personalizado com técnica, ética e proximidade real.",
     url: "https://castroedamaso.adv.br",
     siteName: "Castro & Damaso Advocacia",
     locale: "pt_BR",
@@ -44,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Castro & Damaso Advocacia | Ponte Nova/MG",
     description:
-      "Escritório de advocacia em Ponte Nova/MG com atuação multidisciplinar.",
+      "Escritório de advocacia em Ponte Nova/MG especializado em direito civil, previdenciário e bancário.",
   },
   robots: {
     index: true,
@@ -62,7 +72,12 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${cormorant.variable} ${inter.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <a href="#main-content" className="skip-to-content">
+          Pular para o conteúdo
+        </a>
+        {children}
+      </body>
     </html>
   );
 }

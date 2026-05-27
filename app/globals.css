@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-champagne: #d1a978;
-  --color-champagne-light: #e6c9a3;
-  --color-champagne-dark: #b38b59;
-  --color-dark: #121212;
-  --color-dark-surface: #1e1e1e;
-  --color-offwhite: #fafafa;
-  --color-text-dark: #171717;
-  --color-accent-deep: #a88456;
+  --color-champagne: #c9973e;
+  --color-champagne-light: #dbb66a;
+  --color-champagne-dark: #a67c2e;
+  --color-dark: #090909;
+  --color-dark-surface: #111111;
+  --color-dark-elevated: #191919;
+  --color-offwhite: #fafaf8;
+  --color-cream: #f5f0e8;
+  --color-text-dark: #1a1a1a;
+  --color-accent-deep: #7a6336;
   --color-gray-subtle: #9ca3af;
 
   --font-serif: var(--font-cormorant);
@@ -32,7 +34,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,11 +43,27 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-champagne-dark);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-champagne);
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-champagne);
+  color: var(--color-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

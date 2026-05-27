@@ -1,4 +1,5 @@
 import { Hero } from "@/app/components/sections/Hero";
+import { Numeros } from "@/app/components/sections/Numeros";
 import { Sobre } from "@/app/components/sections/Sobre";
 import { Areas } from "@/app/components/sections/Areas";
 import { Socias } from "@/app/components/sections/Socias";
@@ -15,7 +16,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <main id="main-content">
       <Hero />
+      <Numeros />
       <Sobre />
       <Areas />
       <Socias />
@@ -23,6 +26,7 @@ export default function Home() {
       <Depoimentos />
       <Faq />
       <Contato />
+      </main>
       <Footer />
       <WhatsAppFloat />
       <StructuredData />
